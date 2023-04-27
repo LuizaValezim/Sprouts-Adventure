@@ -18,6 +18,10 @@ public class Hearts : MonoBehaviour
             playerHealth.currentHealth = numberOfHearts;
         }
 
+        if (playerHealth.currentHealth < 0){
+            playerHealth.currentHealth = 0;
+        }
+
         for (int i = 0; i < hearts.Length; i++){
             
             if(i < playerHealth.currentHealth){
