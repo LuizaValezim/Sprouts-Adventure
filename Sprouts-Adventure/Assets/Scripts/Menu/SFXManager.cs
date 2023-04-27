@@ -7,12 +7,12 @@ using UnityEngine.Audio;
 public class SFXManager : MonoBehaviour
 {
     [SerializeField] private AudioMixer MyMixer;
-    public float startingVolume = 15;
+    public float maxVolume = 15;
     public float currentVolume;
     public float mixerVolume;
 
     void Start(){
-        currentVolume = startingVolume;
+        currentVolume = 8;
         mixerVolume = currentVolume/15;
         MyMixer.SetFloat("SFX", Mathf.Log10(mixerVolume)*20);
     }

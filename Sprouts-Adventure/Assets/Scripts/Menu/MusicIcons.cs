@@ -14,8 +14,8 @@ public class MusicIcons : MonoBehaviour
 
     void Update(){
 
-        if (gameVolume.currentVolume > gameVolume.startingVolume){
-            gameVolume.currentVolume = gameVolume.startingVolume;
+        if (gameVolume.currentVolume > gameVolume.maxVolume){
+            gameVolume.currentVolume = gameVolume.maxVolume;
         }
 
         if (gameVolume.currentVolume < 0){
@@ -30,7 +30,7 @@ public class MusicIcons : MonoBehaviour
                 volume[i].sprite = emptyVolume;
             }
 
-            if(i < gameVolume.startingVolume){
+            if(i < gameVolume.maxVolume){
                 volume[i].enabled = true;
             } else {
                 volume[i].enabled = false;

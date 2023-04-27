@@ -14,8 +14,8 @@ public class SFXIcons : MonoBehaviour
 
     void Update(){
 
-        if (sfxVolume.currentVolume > sfxVolume.startingVolume){
-            sfxVolume.currentVolume = sfxVolume.startingVolume;
+        if (sfxVolume.currentVolume > sfxVolume.maxVolume){
+            sfxVolume.currentVolume = sfxVolume.maxVolume;
         }
 
         if (sfxVolume.currentVolume < 0){
@@ -30,7 +30,7 @@ public class SFXIcons : MonoBehaviour
                 volume[i].sprite = emptyVolume;
             }
 
-            if(i < sfxVolume.startingVolume){
+            if(i < sfxVolume.maxVolume){
                 volume[i].enabled = true;
             } else {
                 volume[i].enabled = false;
