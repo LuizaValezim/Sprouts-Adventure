@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Volume : MonoBehaviour
+public class MusicIcons : MonoBehaviour
 {
     
-    public VolumeItem gameVolume;
+    public MusicManager gameVolume;
 
     public Image[] volume;
     public Sprite fullVolume;
