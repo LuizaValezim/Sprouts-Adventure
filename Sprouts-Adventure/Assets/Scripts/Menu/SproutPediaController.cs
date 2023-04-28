@@ -11,7 +11,7 @@ public class SproutPediaController : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.I)){
+        if (Input.GetKeyDown(KeyCode.M)){
             if (sproutpedia.isActiveAndEnabled == false){
                 sproutpedia.Show();
                 emotes.SetActive(false);
@@ -23,4 +23,5 @@ public class SproutPediaController : MonoBehaviour
             }
         }
     }
+    
 }
