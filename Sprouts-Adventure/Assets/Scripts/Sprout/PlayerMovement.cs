@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
+    public float sprintSpeed = 5f;
     public float pointSpeed = 2f;
 
     public Rigidbody2D rb;
@@ -24,12 +25,11 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
-        
+        if (Input.GetKeyDown(KeyCode.LeftShift)){
+            rb.MovePosition(rb.position + movement * sprintSpeed * Time.fixedDeltaTime);
+        }
+        else {
+            rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        }
     }
-
-    
-    
-    
-    
 }

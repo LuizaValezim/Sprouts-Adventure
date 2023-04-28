@@ -19,5 +19,4 @@ public class Sproutpedia : MonoBehaviour
     public void Hide(){
         gameObject.SetActive(false);
     }
-
 }
