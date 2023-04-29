@@ -9,14 +9,19 @@ public class PlayerMovement : MonoBehaviour
     public float pointSpeed = 2f;
 
     public Rigidbody2D rb;
+    public Rigidbody2D firePoint;
     public Animator animator;
+    public Camera cam;
 
     Vector2 movement;
+    Vector2 mousePos;
 
     void Update()
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
+
+        mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
 
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
@@ -25,11 +30,12 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift)){
-            rb.MovePosition(rb.position + movement * sprintSpeed * Time.fixedDeltaTime);
-        }
-        else {
-            rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
-        }
+        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        firePoint.MovePosition(rb.position);
+
+        Vector2 lookDir = mousePos - rb.position;
+        float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
+
+        firePoint.rotation = angle;
     }
 }
