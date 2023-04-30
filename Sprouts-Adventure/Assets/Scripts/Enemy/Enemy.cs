@@ -6,17 +6,44 @@ using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
-    public static event Action<Enemy> OnEnemyKilled;
     public int health;
     public int maxHealth;
+    private EnemyHealth enemyHealth;
 
-    // Start is called before the first frame Damage
+    private Transform playerTransform;
+    //public PlayerHealth playerHealth;
+    private float distance;
+    public float howClose;
+
+    public Animator animator;
+
     public void Start()
     {
         health = maxHealth;
+
+        playerTransform = GameObject.FindGameObjectWithTag("Sprout").transform;
     }
 
-    // Update is called once per frame
+    void Update() 
+    {
+        distance = Vector3.Distance(playerTransform.position, transform.position);
+
+        // Run animation of the enemy attacking
+        animator.SetFloat("Distance", distance);
+
+        if (distance <= howClose) 
+        {   
+            animator.SetBool("Attack", true);
+            // Make player receive damage
+            // playerHealth =.Damage();
+            //transform.LookAt(playerTransform);
+        }
+        else 
+        {
+            animator.SetBool("Attack", false);
+        }
+    }
+
     public void Damage(int damage)
     {
         health -= damage;
@@ -24,7 +51,6 @@ public class Enemy : MonoBehaviour
         if (health <= 0)
         {
             Destroy(gameObject);
-            OnEnemyKilled?.Invoke(this);
         } 
     }
 }
