@@ -31,8 +31,6 @@ public class Enemy : MonoBehaviour
     {
         distance = Vector3.Distance(playerTransform.position, transform.position);
 
-        Debug.Log(distance);
-
         // Run animation of the enemy attacking
         animator.SetFloat("Distance", distance);
 
