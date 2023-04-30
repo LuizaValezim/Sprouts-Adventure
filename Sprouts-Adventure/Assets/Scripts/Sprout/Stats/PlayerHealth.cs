@@ -24,6 +24,10 @@ public class PlayerHealth : MonoBehaviour
     {
         health -= damage;
 
+        // Change the Sprite Renderer for a moment when hit
+        //GameObject.FindGameObjectWithTag("Sprout").GetComponent<SpriteRenderer>().color = Color.red;
+        //GameObject.FindGameObjectWithTag("Sprout").GetComponent<SpriteRenderer>().color = Color.white;
+
         if (health == 0) 
         {
             gameOver.SetActive(true);
