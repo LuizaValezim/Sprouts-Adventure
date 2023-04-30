@@ -7,12 +7,15 @@ public class PlayerHealth : MonoBehaviour
 {
     public int health;
     public int maxHealth;
+    public GameObject hitEffect;
     
     // Start is called before the first frame Damage
     public void Start()
     {
         health = maxHealth;
     }
+
+    
 
     // Update is called once per frame
     public void Damage(int damage)
@@ -21,6 +24,7 @@ public class PlayerHealth : MonoBehaviour
 
         if (health > 0)
         {
+            Debug.Log(health);
             // change heart sprite
             // change sprout sprite to red
             // add audio source of damage
@@ -30,4 +34,7 @@ public class PlayerHealth : MonoBehaviour
             // player is dead
         }
     }
+
+
+    
 }

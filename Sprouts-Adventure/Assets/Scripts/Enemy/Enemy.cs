@@ -8,10 +8,10 @@ public class Enemy : MonoBehaviour
 {
     public int health;
     public int maxHealth;
-    private EnemyHealth enemyHealth;
+    public int damage;
 
     private Transform playerTransform;
-    //public PlayerHealth playerHealth;
+    public PlayerHealth playerHealth;
     private float distance;
     public float howClose;
 
@@ -34,13 +34,19 @@ public class Enemy : MonoBehaviour
         if (distance <= howClose) 
         {   
             animator.SetBool("Attack", true);
-            // Make player receive damage
-            // playerHealth =.Damage();
-            //transform.LookAt(playerTransform);
         }
         else 
         {
             animator.SetBool("Attack", false);
+        }
+    }
+
+    public void OnCollisionEnter2D(Collision2D collision)  
+    {
+        // Player to take damage
+        if (collision.gameObject.tag == "Sprout")
+        {
+            playerHealth.Damage(damage);
         }
     }
 
