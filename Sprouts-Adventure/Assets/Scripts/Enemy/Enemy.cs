@@ -14,6 +14,7 @@ public class Enemy : MonoBehaviour
     public PlayerHealth playerHealth;
     private float distance;
     public float howClose;
+    public int coolDown;
 
     public Animator animator;
 
@@ -22,11 +23,15 @@ public class Enemy : MonoBehaviour
         health = maxHealth;
 
         playerTransform = GameObject.FindGameObjectWithTag("Sprout").transform;
+        playerHealth = GameObject.FindGameObjectWithTag("Sprout").GetComponent<PlayerHealth>();
+
     }
 
     void Update() 
     {
         distance = Vector3.Distance(playerTransform.position, transform.position);
+
+        Debug.Log(distance);
 
         // Run animation of the enemy attacking
         animator.SetFloat("Distance", distance);
@@ -34,6 +39,7 @@ public class Enemy : MonoBehaviour
         if (distance <= howClose) 
         {   
             animator.SetBool("Attack", true);
+            CoolDown();
         }
         else 
         {
@@ -58,5 +64,14 @@ public class Enemy : MonoBehaviour
         {
             Destroy(gameObject);
         } 
+    }
+
+    IEnumerator CoolDown()
+    {
+        playerHealth.Damage(damage);
+
+        yield return new WaitForSeconds(coolDown);
+
+        playerHealth.Damage(damage);
     }
 }

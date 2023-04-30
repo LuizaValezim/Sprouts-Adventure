@@ -5,36 +5,31 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int health;
+    [SerializeField] public int health;
     public int maxHealth;
-    public GameObject hitEffect;
+    public GameObject gameOver;
+
+    [SerializeField] private GameObject emotes;
+    [SerializeField] private GameObject inventory;
     
     // Start is called before the first frame Damage
     public void Start()
     {
         health = maxHealth;
+        gameOver.SetActive(false);
     }
-
-    
 
     // Update is called once per frame
     public void Damage(int damage)
     {
         health -= damage;
 
-        if (health > 0)
+        if (health == 0) 
         {
-            Debug.Log(health);
-            // change heart sprite
-            // change sprout sprite to red
-            // add audio source of damage
-        } 
-        else 
-        {
-            // player is dead
+            gameOver.SetActive(true);
+            emotes.SetActive(false);
+            inventory.SetActive(false);
+            Time.timeScale = 0f;
         }
     }
-
-
-    
 }

@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -104,69 +104,6 @@ TextureImporter:
   spriteSheet:
     serializedVersion: 2
     sprites:
-    - serializedVersion: 2
-      name: Premium Charakter Spritesheet_0
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 1136
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a882e15ef3b3e4e499a406898bd8a05d
-      internalID: 18463928
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Premium Charakter Spritesheet_1
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 1136
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2f8e1523e77d13644b2885eb752418bd
-      internalID: -203642745
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Premium Charakter Spritesheet_2
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 1136
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d765324314a1034489f5f4ca6a89cd19
-      internalID: -1827434490
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Premium Charakter Spritesheet_3
       rect:
@@ -216,7 +153,7 @@ TextureImporter:
         x: 112
         y: 1120
         width: 16
-        height: 16
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,7 +174,7 @@ TextureImporter:
         x: 160
         y: 1120
         width: 16
-        height: 16
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,7 +195,7 @@ TextureImporter:
         x: 208
         y: 1120
         width: 16
-        height: 16
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -336,69 +273,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Premium Charakter Spritesheet_11
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 1088
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 55512420388fb8f4488baec177ee154e
-      internalID: 759339681
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Premium Charakter Spritesheet_12
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 1088
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1e97595c7d1fc5141bc339ab863d3b6c
-      internalID: -1808675953
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Premium Charakter Spritesheet_13
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 1088
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 93ba778ebdf62ed4bb18c9e9a6454a3f
-      internalID: 1979325331
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Premium Charakter Spritesheet_14
       rect:
         serializedVersion: 2
@@ -447,7 +321,7 @@ TextureImporter:
         x: 112
         y: 1072
         width: 16
-        height: 16
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -468,7 +342,7 @@ TextureImporter:
         x: 160
         y: 1072
         width: 16
-        height: 16
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -489,7 +363,7 @@ TextureImporter:
         x: 208
         y: 1072
         width: 16
-        height: 16
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -567,90 +441,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Premium Charakter Spritesheet_22
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 1040
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 77b67f54b061fa24e98162e565cd2dd2
-      internalID: 1041404368
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Premium Charakter Spritesheet_23
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 1040
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b3db247fd33cc224dab24974254fd3fc
-      internalID: 1668883801
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Premium Charakter Spritesheet_24
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 1040
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b7c351d4d4d5d82488a6afb822fa1ac8
-      internalID: -1027671048
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Premium Charakter Spritesheet_25
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 1040
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 76fccd2004027a047971f632697563fd
-      internalID: -768525538
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Premium Charakter Spritesheet_26
       rect:
         serializedVersion: 2
@@ -678,7 +468,7 @@ TextureImporter:
         x: 64
         y: 1024
         width: 16
-        height: 16
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -699,7 +489,7 @@ TextureImporter:
         x: 112
         y: 1024
         width: 16
-        height: 16
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -720,7 +510,7 @@ TextureImporter:
         x: 160
         y: 1024
         width: 16
-        height: 16
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -741,7 +531,7 @@ TextureImporter:
         x: 208
         y: 1024
         width: 16
-        height: 16
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -819,90 +609,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Premium Charakter Spritesheet_34
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 992
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7dce7840f7043554081a67047b25c4b0
-      internalID: -1254740221
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Premium Charakter Spritesheet_35
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 992
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bb4f3ceba2eda8f46bb1fce48d71474a
-      internalID: 1677928419
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Premium Charakter Spritesheet_36
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 992
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f0400210c9614f4a8cfdceff986428e
-      internalID: 726652850
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Premium Charakter Spritesheet_37
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 992
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 038771f688d43694bae841fe47e20f0e
-      internalID: 175896163
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Premium Charakter Spritesheet_38
       rect:
         serializedVersion: 2
@@ -930,7 +636,7 @@ TextureImporter:
         x: 64
         y: 976
         width: 16
-        height: 16
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -951,7 +657,7 @@ TextureImporter:
         x: 112
         y: 976
         width: 16
-        height: 16
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -972,7 +678,7 @@ TextureImporter:
         x: 160
         y: 976
         width: 16
-        height: 16
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -993,7 +699,7 @@ TextureImporter:
         x: 208
         y: 976
         width: 16
-        height: 16
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1071,97 +777,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Premium Charakter Spritesheet_46
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 944
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bbcac8b9afa0316468e5fd533763707d
-      internalID: 1402838120
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Premium Charakter Spritesheet_47
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 944
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 991b73e7f55d85146958bbbfb75443ef
-      internalID: 158740623
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Premium Charakter Spritesheet_48
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 944
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bb66316cd41c57b4a96186f1c6f125ed
-      internalID: 192517180
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Premium Charakter Spritesheet_49
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 944
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9caa204a4c663b5469a6f94ef250eb54
-      internalID: -417598464
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Premium Charakter Spritesheet_50
       rect:
         serializedVersion: 2
         x: 16
         y: 928
         width: 16
-        height: 16
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1182,7 +804,7 @@ TextureImporter:
         x: 64
         y: 928
         width: 16
-        height: 16
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1245,7 +867,7 @@ TextureImporter:
         x: 208
         y: 928
         width: 16
-        height: 16
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1266,7 +888,7 @@ TextureImporter:
         x: 256
         y: 928
         width: 16
-        height: 16
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1287,7 +909,7 @@ TextureImporter:
         x: 304
         y: 928
         width: 16
-        height: 16
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1323,97 +945,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Premium Charakter Spritesheet_58
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 896
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7f36e5628125ded469c43a14df5b4a77
-      internalID: -230387696
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Premium Charakter Spritesheet_59
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 896
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1eb89706dd26b6340a438510a0940720
-      internalID: 1846188186
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Premium Charakter Spritesheet_60
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 896
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e0aee6300a205c14c9446606cad33fe3
-      internalID: 34965814
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Premium Charakter Spritesheet_61
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 896
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f2968155057463947b0da12e32bf7183
-      internalID: -588494973
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Premium Charakter Spritesheet_62
       rect:
         serializedVersion: 2
         x: 16
         y: 880
         width: 16
-        height: 16
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1434,7 +972,7 @@ TextureImporter:
         x: 64
         y: 880
         width: 16
-        height: 16
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1495,7 +1033,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 208
-        y: 880
+        y: 881
         width: 16
         height: 16
       alignment: 0
@@ -1518,7 +1056,7 @@ TextureImporter:
         x: 256
         y: 880
         width: 16
-        height: 16
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1575,48 +1113,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Premium Charakter Spritesheet_70
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 848
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6dcf647f13a64e54bb991bff4731f4c3
-      internalID: -543237044
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Premium Charakter Spritesheet_71
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 848
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5f0dcb89e07fcb34cbff363e9bf98251
-      internalID: 1726502586
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Premium Charakter Spritesheet_72
       rect:
         serializedVersion: 2
@@ -1644,7 +1140,7 @@ TextureImporter:
         x: 64
         y: 832
         width: 16
-        height: 16
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1728,7 +1224,7 @@ TextureImporter:
         x: 256
         y: 832
         width: 16
-        height: 16
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1785,48 +1281,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Premium Charakter Spritesheet_80
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 800
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 520b0abe3da59ae4887d3a6bfd91c56b
-      internalID: 84954181
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Premium Charakter Spritesheet_81
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 800
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 41197ccd2bb2ef1429b44c0578d53a55
-      internalID: 2100092219
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Premium Charakter Spritesheet_82
       rect:
         serializedVersion: 2
@@ -1854,7 +1308,7 @@ TextureImporter:
         x: 64
         y: 784
         width: 16
-        height: 16
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1938,7 +1392,7 @@ TextureImporter:
         x: 256
         y: 784
         width: 16
-        height: 16
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1995,137 +1449,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Premium Charakter Spritesheet_90
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 752
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: af523a88858ae7e49a6c7bdc53477da0
-      internalID: -1230471046
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Premium Charakter Spritesheet_91
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 752
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bb2626f56027ff44695642b85e08a378
-      internalID: 28843890
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Premium Charakter Spritesheet_92
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 752
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 80c515bb65c505748ba0381b7764957f
-      internalID: 1376296305
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Premium Charakter Spritesheet_93
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 752
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ee558b96505643f4598193650922020f
-      internalID: 963640554
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Premium Charakter Spritesheet_94
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 752
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9010620b26ef6b44cb5b9cf150fbb000
-      internalID: 1447134766
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Premium Charakter Spritesheet_95
-      rect:
-        serializedVersion: 2
-        x: 304
-        y: 752
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 99006ee5f14ba9347b06be500db25275
-      internalID: 785400497
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Premium Charakter Spritesheet_96
       rect:
         serializedVersion: 2
         x: 16
-        y: 736
+        y: 737
         width: 16
         height: 16
       alignment: 0
@@ -2146,7 +1474,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 736
+        y: 738
         width: 16
         height: 16
       alignment: 0
@@ -2167,9 +1495,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 112
-        y: 736
+        y: 737
         width: 16
-        height: 16
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2209,7 +1537,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 208
-        y: 736
+        y: 737
         width: 16
         height: 16
       alignment: 0
@@ -2230,7 +1558,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 736
+        y: 738
         width: 16
         height: 16
       alignment: 0
@@ -2251,9 +1579,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 304
-        y: 736
+        y: 737
         width: 16
-        height: 16
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2289,137 +1617,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Premium Charakter Spritesheet_104
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 704
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 77424623620a8b94db7b2e086f396979
-      internalID: -464683374
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Premium Charakter Spritesheet_105
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 704
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 144150c2a33d110428c2363733ad01b4
-      internalID: 716579910
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Premium Charakter Spritesheet_106
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 704
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 87acdb10c591b2a44adc346f805b5731
-      internalID: 1808525464
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Premium Charakter Spritesheet_107
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 704
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 68a72f0384ea8744e8c2c97867830fd7
-      internalID: 1781190966
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Premium Charakter Spritesheet_108
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 704
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0fa01802f6bf9a74ab6934da734f0db9
-      internalID: 835813218
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Premium Charakter Spritesheet_109
-      rect:
-        serializedVersion: 2
-        x: 304
-        y: 704
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fc9f9c308b0ba14419617e1be60765ed
-      internalID: 50368504
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Premium Charakter Spritesheet_110
       rect:
         serializedVersion: 2
         x: 16
-        y: 688
+        y: 689
         width: 16
         height: 16
       alignment: 0
@@ -2440,7 +1642,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 688
+        y: 690
         width: 16
         height: 16
       alignment: 0
@@ -2461,9 +1663,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 112
-        y: 688
+        y: 689
         width: 16
-        height: 16
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2503,7 +1705,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 208
-        y: 688
+        y: 689
         width: 16
         height: 16
       alignment: 0
@@ -2524,7 +1726,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 688
+        y: 690
         width: 16
         height: 16
       alignment: 0
@@ -2545,9 +1747,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 304
-        y: 688
+        y: 689
         width: 16
-        height: 16
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9559,9 +8761,9 @@ TextureImporter:
       Premium Charakter Spritesheet_391: 1546078282
       Premium Charakter Spritesheet_327: 1764327641
       Premium Charakter Spritesheet_8: -1067260752
+      Premium Charakter Spritesheet_24: -1027671048
       Premium Charakter Spritesheet_74: -1746079473
       Premium Charakter Spritesheet_380: 375285036
-      Premium Charakter Spritesheet_24: -1027671048
       Premium Charakter Spritesheet_221: 1352247689
       Premium Charakter Spritesheet_412: -1620339757
       Premium Charakter Spritesheet_55: -122067869
@@ -9619,8 +8821,8 @@ TextureImporter:
       Premium Charakter Spritesheet_215: 951904911
       Premium Charakter Spritesheet_294: 1284390260
       Premium Charakter Spritesheet_338: -860470891
-      Premium Charakter Spritesheet_358: -820733941
       Premium Charakter Spritesheet_225: 1471566507
+      Premium Charakter Spritesheet_358: -820733941
       Premium Charakter Spritesheet_253: 1613072079
       Premium Charakter Spritesheet_428: 1069015833
       Premium Charakter Spritesheet_387: 528099343
