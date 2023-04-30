@@ -30,31 +30,31 @@ public class ItemDescription : MonoBehaviour
 
     }
 
-    public void SetMachado(){
+    public void SetMilk(){
         this.title.text = "Milk (PowerUp)";
         this.description.text = "The PowerUp of the Milk ";
 
     }
 
-    public void SetEnchada(){
+    public void SetGrass(){
         this.title.text = "Grass (PowerUp)";
         this.description.text = "Super Enchada";
 
     }
 
-    public void SetMaca(){
+    public void SetApple(){
         this.title.text = "Apple (PowerUp)";
         this.description.text = "Super Maçã";
 
     }
 
-    public void SetMorangos(){
+    public void SetStrawberry(){
         this.title.text = "Strawberry (PowerUp)";
         this.description.text = "Super Morangos";
 
     }
 
-    public void SetUva(){
+    public void SetGrape(){
         this.title.text = "Grapes (PoweUp)";
         this.description.text = "Super Uvas";
 
