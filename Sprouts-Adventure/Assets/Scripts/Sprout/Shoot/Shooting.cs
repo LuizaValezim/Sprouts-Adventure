@@ -6,6 +6,7 @@ public class Shooting : MonoBehaviour
 {
     public Transform firePoint;
     public GameObject bulletPrefab;
+    public int damage;
 
     public float bulletForce = 20f;
 
@@ -19,8 +20,9 @@ public class Shooting : MonoBehaviour
 
     void Shoot() 
     {
-        // Create a bullet
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+
+        bullet.GetComponent<Bullet>().SetDamage(damage);
 
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
 

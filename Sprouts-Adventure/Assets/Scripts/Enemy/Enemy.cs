@@ -24,7 +24,6 @@ public class Enemy : MonoBehaviour
 
         playerTransform = GameObject.FindGameObjectWithTag("Sprout").transform;
         playerHealth = GameObject.FindGameObjectWithTag("Sprout").GetComponent<PlayerHealth>();
-
     }
 
     void Update() 

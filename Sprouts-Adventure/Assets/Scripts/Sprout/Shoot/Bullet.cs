@@ -22,4 +22,9 @@ public class Bullet : MonoBehaviour
         // Destroying the bullet
         Destroy(gameObject, 2f);
     }
+
+    public void SetDamage(int amount) 
+    {
+        damage = amount;
+    }
 }
