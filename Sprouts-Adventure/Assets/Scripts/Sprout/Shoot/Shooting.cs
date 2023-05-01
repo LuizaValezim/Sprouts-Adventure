@@ -8,8 +8,11 @@ public class Shooting : MonoBehaviour
     public GameObject bulletPrefab;
     public int damage;
     private bool shooting = true;
-
     public float bulletForce = 20f;
+
+    public AudioSource source;
+    public AudioClip clip;
+
 
     void Update()
     {
@@ -23,6 +26,7 @@ public class Shooting : MonoBehaviour
         {
             if (shooting == true){
                 Shoot();
+                source.PlayOneShot(clip);
             }
         }
     }
