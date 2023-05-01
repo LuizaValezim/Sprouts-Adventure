@@ -15,7 +15,6 @@ public class Slot : MonoBehaviour
         if (transform.childCount <= 0){
             inventory.isFull[i] = false;
         }
-
     }
     
     public void DropItem(){
@@ -23,6 +22,5 @@ public class Slot : MonoBehaviour
             child.GetComponent<Spawn>().SpawnDroppedItem();
             GameObject.Destroy(child.gameObject);
         }
-
     }
 }

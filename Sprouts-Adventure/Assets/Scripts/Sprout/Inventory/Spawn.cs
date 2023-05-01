@@ -10,12 +10,11 @@ public class Spawn : MonoBehaviour
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Sprout").transform;
-        
     }
 
-    public void SpawnDroppedItem(){
+    public void SpawnDroppedItem()
+    {
         Vector2 playerPos = new Vector2(player.position.x , player.position.y + .2f);
         Instantiate(item, playerPos, Quaternion.identity);
     }
-    
 }
