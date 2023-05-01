@@ -12,12 +12,11 @@ GameObject:
   - component: {fileID: 2374545442025573402}
   - component: {fileID: 2821960799431115064}
   - component: {fileID: 2441241910770616548}
-  - component: {fileID: -6556535399503332286}
-  - component: {fileID: 153210847886041910}
   - component: {fileID: 9107991266922019348}
+  - component: {fileID: 164921432345219748}
   m_Layer: 5
   m_Name: Grapes
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,34 +93,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 5304467178399927949, guid: c80ad555b3a9efc469b9c73dc029dd0b, type: 3}
---- !u!114 &-6556535399503332286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2463684096226528112}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c5e8bad4b1638549806ecd42ab7e2a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 2
-  quantity: 0
---- !u!114 &153210847886041910
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2463684096226528112}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1357018dd18e234597db94542dfbe88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpEffect: {fileID: 11400000, guid: ed05c8cf605fba742ad70ab0533aabfb, type: 2}
-  item: {fileID: 2463684096226528112}
 --- !u!114 &9107991266922019348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,6 +108,21 @@ MonoBehaviour:
   cursorNormal: {fileID: 2800000, guid: 3630a2e95a6bdd74aad8ba914870d733, type: 3}
   cursorPointing: {fileID: 2800000, guid: 5867fb2599620ac4bb2e0e3d1b3c7f5b, type: 3}
   cursorGrabbing: {fileID: 2800000, guid: 6648134af4fe5744785de892435a7a9f, type: 3}
+--- !u!114 &164921432345219748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2463684096226528112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1357018dd18e234597db94542dfbe88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PowerUpEffect: {fileID: 11400000, guid: ed05c8cf605fba742ad70ab0533aabfb, type: 2}
+  item: {fileID: 2463684096226528112}
+  clip: {fileID: 8300000, guid: 0d2d490220f6f174baf9f7df1e3854b1, type: 3}
 --- !u!1 &5511547424011170663
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,9 +215,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 153210847886041910}
+      - m_Target: {fileID: 164921432345219748}
         m_TargetAssemblyTypeName: PowerUp, Assembly-CSharp
         m_MethodName: UsePowerUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 9107991266922019348}
+        m_TargetAssemblyTypeName: CursorManager, Assembly-CSharp
+        m_MethodName: SetCursorGrabbing
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

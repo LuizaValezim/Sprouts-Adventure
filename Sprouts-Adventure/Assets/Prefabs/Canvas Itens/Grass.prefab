@@ -12,12 +12,11 @@ GameObject:
   - component: {fileID: 3642701190825180698}
   - component: {fileID: 3642701190825180677}
   - component: {fileID: -2037986801638032163}
-  - component: {fileID: -405455559961083879}
   - component: {fileID: 3259574668333102432}
   - component: {fileID: 2399155184935445751}
   m_Layer: 5
   m_Name: Grass
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,20 +93,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 455781328453577639, guid: 8571096a38ef116488601c5e4105c537, type: 3}
---- !u!114 &-405455559961083879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3642701190825180679}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c5e8bad4b1638549806ecd42ab7e2a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 4
-  quantity: 0
 --- !u!114 &3259574668333102432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,6 +107,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PowerUpEffect: {fileID: 11400000, guid: 998501fea8594cb468b0f30010fefb3b, type: 2}
   item: {fileID: 3642701190825180679}
+  clip: {fileID: 8300000, guid: 0d2d490220f6f174baf9f7df1e3854b1, type: 3}
 --- !u!114 &2399155184935445751
 MonoBehaviour:
   m_ObjectHideFlags: 0

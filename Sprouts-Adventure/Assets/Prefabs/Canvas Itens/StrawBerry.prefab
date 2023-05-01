@@ -12,12 +12,11 @@ GameObject:
   - component: {fileID: 8755063077487611668}
   - component: {fileID: 7837403563113853170}
   - component: {fileID: -4354380938390571294}
-  - component: {fileID: 3863953300716851768}
-  - component: {fileID: 3190684744291923878}
   - component: {fileID: 939741999531489995}
+  - component: {fileID: 2831905324707234792}
   m_Layer: 5
   m_Name: StrawBerry
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,34 +93,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 7915958896263229474, guid: 980263fd63796de429daa740e1551ab4, type: 3}
---- !u!114 &3863953300716851768
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 693247706517851339}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c5e8bad4b1638549806ecd42ab7e2a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 3
-  quantity: 0
---- !u!114 &3190684744291923878
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 693247706517851339}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1357018dd18e234597db94542dfbe88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpEffect: {fileID: 11400000, guid: 3bc2ad32ff1fdb546994d804e90bac8e, type: 2}
-  item: {fileID: 693247706517851339}
 --- !u!114 &939741999531489995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,6 +108,21 @@ MonoBehaviour:
   cursorNormal: {fileID: 2800000, guid: 3630a2e95a6bdd74aad8ba914870d733, type: 3}
   cursorPointing: {fileID: 2800000, guid: 5867fb2599620ac4bb2e0e3d1b3c7f5b, type: 3}
   cursorGrabbing: {fileID: 2800000, guid: 6648134af4fe5744785de892435a7a9f, type: 3}
+--- !u!114 &2831905324707234792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693247706517851339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1357018dd18e234597db94542dfbe88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PowerUpEffect: {fileID: 11400000, guid: 3bc2ad32ff1fdb546994d804e90bac8e, type: 2}
+  item: {fileID: 693247706517851339}
+  clip: {fileID: 8300000, guid: 0d2d490220f6f174baf9f7df1e3854b1, type: 3}
 --- !u!1 &6083111796898072901
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,7 +215,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3190684744291923878}
+      - m_Target: {fileID: 2831905324707234792}
         m_TargetAssemblyTypeName: PowerUp, Assembly-CSharp
         m_MethodName: UsePowerUp
         m_Mode: 1

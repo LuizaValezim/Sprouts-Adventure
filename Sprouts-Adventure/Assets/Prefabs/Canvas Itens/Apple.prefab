@@ -13,11 +13,11 @@ GameObject:
   - component: {fileID: 3479811716681466015}
   - component: {fileID: 7870686069908422441}
   - component: {fileID: 7013814010559267073}
-  - component: {fileID: 2173411723561262588}
   - component: {fileID: 764487000365500263}
+  - component: {fileID: 8101562293914251790}
   m_Layer: 5
   m_Name: Apple
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108,20 +108,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   quantity: 0
---- !u!114 &2173411723561262588
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5835205137302896042}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1357018dd18e234597db94542dfbe88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpEffect: {fileID: 11400000, guid: b3f78191f940fce439eda31832934ae4, type: 2}
-  item: {fileID: 5835205137302896042}
 --- !u!114 &764487000365500263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,6 +123,21 @@ MonoBehaviour:
   cursorNormal: {fileID: 2800000, guid: 3630a2e95a6bdd74aad8ba914870d733, type: 3}
   cursorPointing: {fileID: 2800000, guid: 5867fb2599620ac4bb2e0e3d1b3c7f5b, type: 3}
   cursorGrabbing: {fileID: 2800000, guid: 6648134af4fe5744785de892435a7a9f, type: 3}
+--- !u!114 &8101562293914251790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5835205137302896042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1357018dd18e234597db94542dfbe88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PowerUpEffect: {fileID: 11400000, guid: b3f78191f940fce439eda31832934ae4, type: 2}
+  item: {fileID: 5835205137302896042}
+  clip: {fileID: 8300000, guid: 0d2d490220f6f174baf9f7df1e3854b1, type: 3}
 --- !u!1 &6503597331814509770
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,7 +230,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2173411723561262588}
+      - m_Target: {fileID: 8101562293914251790}
         m_TargetAssemblyTypeName: PowerUp, Assembly-CSharp
         m_MethodName: UsePowerUp
         m_Mode: 1
