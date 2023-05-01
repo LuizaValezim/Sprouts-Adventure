@@ -12,7 +12,12 @@ public class Enemy : MonoBehaviour
 
     private Transform playerTransform;
     private Player playerHealth;
-    private float distance;
+    private float playerDistance;
+
+    private Transform cowTransform;
+    private Cow cowHealth;
+    private float cowDistance;
+    
     public float howClose;
     public int coolDown;
 
@@ -24,19 +29,29 @@ public class Enemy : MonoBehaviour
 
         playerTransform = GameObject.FindGameObjectWithTag("Sprout").transform;
         playerHealth = GameObject.FindGameObjectWithTag("Sprout").GetComponent<Player>();
+
+        cowTransform = GameObject.FindGameObjectWithTag("Cow").transform;
+        cowHealth = GameObject.FindGameObjectWithTag("Cow").GetComponent<Cow>();
     }
 
     void Update() 
     {
-        distance = Vector3.Distance(playerTransform.position, transform.position);
+        playerDistance = Vector3.Distance(playerTransform.position, playerTransform.position);
+        cowDistance = Vector3.Distance(cowTransform.position, cowTransform.position);
 
         // Run animation of the enemy attacking
-        animator.SetFloat("Distance", distance);
+        animator.SetFloat("Distance Player", playerDistance);
+        animator.SetFloat("Distance Cow", cowDistance);
 
-        if (distance <= howClose) 
+        if (playerDistance <= howClose) 
         {   
             animator.SetBool("Attack", true);
-            CoolDown();
+            CoolDownPlayer();
+        }
+        if (cowDistance <= howClose) 
+        {   
+            animator.SetBool("Attack", true);
+            CoolDownCow();
         }
         else 
         {
@@ -51,6 +66,12 @@ public class Enemy : MonoBehaviour
         {
             playerHealth.Damage(damage);
         }
+
+        // Cow to take damage
+        if (collision.gameObject.tag == "Cow")
+        {
+            cowHealth.Damage(damage);
+        }
     }
 
     public void Damage(int damage)
@@ -63,12 +84,21 @@ public class Enemy : MonoBehaviour
         } 
     }
 
-    IEnumerator CoolDown()
+    IEnumerator CoolDownPlayer()
     {
         playerHealth.Damage(damage);
 
         yield return new WaitForSeconds(coolDown);
 
         playerHealth.Damage(damage);
+    }
+
+    IEnumerator CoolDownCow()
+    {
+        cowHealth.Damage(damage);
+
+        yield return new WaitForSeconds(coolDown);
+
+        cowHealth.Damage(damage);
     }
 }
