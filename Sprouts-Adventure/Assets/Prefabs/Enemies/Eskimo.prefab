@@ -75,12 +75,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: -112658876, guid: 233ec94f63952c343b86c0ffe71ad018, type: 3}
+  m_Sprite: {fileID: -112658876, guid: f13db357cdf34a74a9af3cff16318c20, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.0666667, y: 1}
+  m_Size: {x: 1.0666667, y: 1.0666667}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -118,7 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be36f9b6607197b4d839fe38e5940186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.7
+  moveSpeed: 0.4
   animator: {fileID: 4943317725032370002}
 --- !u!1 &917016382876885904
 GameObject:
@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 2865357240932235249}
   - component: {fileID: 7829837582992883729}
   m_Layer: 0
-  m_Name: EnemyHealth
+  m_Name: EskimoHealth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -240,7 +240,7 @@ GameObject:
   - component: {fileID: 4494437526157574987}
   m_Layer: 0
   m_Name: Eskimo
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -303,7 +303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  target: {fileID: 0}
+  target: {fileID: 7951279399891468063, guid: ad0f161639cdb8749aeab3bc7a775092, type: 3}
 --- !u!114 &239614561289024261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -385,9 +385,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  maxHealth: 7
-  damage: 1
-  playerHealth: {fileID: 0}
+  maxHealth: 5
+  damage: 3
   howClose: 0.25
   coolDown: 2
   animator: {fileID: 4943317725032370002}

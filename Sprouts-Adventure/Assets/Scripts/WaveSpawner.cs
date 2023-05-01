@@ -12,14 +12,15 @@ public class Wave
     public string waveName;
     public int numberOfEnemies;
     public GameObject[] typeOfEnemies;
+    public GameObject[] typeOfItems;
     public float spawnInterval;
 }
 
 public class WaveSpawner : MonoBehaviour
 {
     public Wave[] waves;
-    public Transform[] spawnPoints;
-    public TextMeshProUGUI waveNumber;
+    public Transform[] spawnPointsEnemies;
+    public Transform[] spawnPointsItems;
 
     private Wave currentWave;
     private int currentWaveNumber;
@@ -32,10 +33,10 @@ public class WaveSpawner : MonoBehaviour
         currentWave = waves[currentWaveNumber];
         SpawnWave();
         GameObject[] totalEnemies = GameObject.FindGameObjectsWithTag("Enemy");
+        GameObject[] totalItems = GameObject.FindGameObjectsWithTag("Item");
         if (totalEnemies.Length == 0 && !canSpawn && currentWaveNumber+1 != waves.Length)
         {
             SpawnNextWave();
-            waveNumber.text = currentWaveNumber.ToString();
         }
     }
 
@@ -52,8 +53,11 @@ public class WaveSpawner : MonoBehaviour
         if (canSpawn && nextSpawnTime < Time.time) 
         { 
             GameObject randomEnemy = currentWave.typeOfEnemies[Random.Range(0, currentWave.typeOfEnemies.Length)];
-            Transform randomPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
-            Instantiate(randomEnemy, randomPoint.position, Quaternion.identity);
+            GameObject randomItem = currentWave.typeOfItems[Random.Range(0, currentWave.typeOfItems.Length)];
+            Transform randomPointEnemies = spawnPointsEnemies[Random.Range(0, spawnPointsEnemies.Length)];
+            Transform randomPointItems = spawnPointsItems[Random.Range(0, spawnPointsItems.Length)];
+            Instantiate(randomEnemy, randomPointEnemies.position, Quaternion.identity);
+            Instantiate(randomItem, randomPointItems.position, Quaternion.identity);
             currentWave.numberOfEnemies--;
             nextSpawnTime = Time.time + currentWave.spawnInterval;
             if(currentWave.numberOfEnemies == 0) 

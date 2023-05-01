@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  target: {fileID: 0}
+  target: {fileID: 7951279399891468063, guid: ad0f161639cdb8749aeab3bc7a775092, type: 3}
 --- !u!61 &3721989104244638235
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -163,7 +163,6 @@ MonoBehaviour:
   health: 0
   maxHealth: 5
   damage: 2
-  playerHealth: {fileID: 0}
   howClose: 0.25
   coolDown: 1
   animator: {fileID: 4838353927024565435}
@@ -285,7 +284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be36f9b6607197b4d839fe38e5940186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.4
+  moveSpeed: 0.5
   animator: {fileID: 4838353927024565435}
 --- !u!1 &8499578316282664179
 GameObject:
