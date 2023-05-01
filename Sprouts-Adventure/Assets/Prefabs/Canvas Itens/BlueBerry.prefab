@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7359890005656487044}
   - component: {fileID: 5711701520111981116}
   - component: {fileID: 3897524556010372500}
+  - component: {fileID: 1114159831686933427}
   m_Layer: 5
   m_Name: BlueBerryButton
   m_TagString: Untagged
@@ -91,9 +92,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9081099735816258233}
-        m_TargetAssemblyTypeName: PowerUp, Assembly-CSharp
-        m_MethodName: UsePowerUp
+      - m_Target: {fileID: 9120812439273610717}
+        m_TargetAssemblyTypeName: BlueberryBuff, Assembly-CSharp
+        m_MethodName: Use
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4813587167503788879}
+        m_TargetAssemblyTypeName: CursorManager, Assembly-CSharp
+        m_MethodName: SetCursorGrabbing
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -133,57 +146,51 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1 &4542988016693213860
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2455751923935179453}
-  - component: {fileID: 9081099735816258233}
-  m_Layer: 5
-  m_Name: BlueberryPowerUp
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2455751923935179453
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4542988016693213860}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8700195971711343812}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &9081099735816258233
+--- !u!114 &1114159831686933427
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4542988016693213860}
+  m_GameObject: {fileID: 3970792625452283401}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1357018dd18e234597db94542dfbe88, type: 3}
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PowerUpEffect: {fileID: 11400000, guid: 469a72c23031b0649823c308c21110ef, type: 2}
-  item: {fileID: 7134872246424058949}
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4813587167503788879}
+          m_TargetAssemblyTypeName: CursorManager, Assembly-CSharp
+          m_MethodName: SetCursorPointing
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4813587167503788879}
+          m_TargetAssemblyTypeName: CursorManager, Assembly-CSharp
+          m_MethodName: Reset
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &7134872246424058949
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,6 +204,8 @@ GameObject:
   - component: {fileID: 7372208614956875037}
   - component: {fileID: -6273887333716195629}
   - component: {fileID: 790758241042081166}
+  - component: {fileID: 9120812439273610717}
+  - component: {fileID: 4813587167503788879}
   m_Layer: 5
   m_Name: BlueBerry
   m_TagString: Untagged
@@ -217,7 +226,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5819878903281483479}
-  - {fileID: 2455751923935179453}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -291,3 +299,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 1
   quantity: 0
+--- !u!114 &9120812439273610717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7134872246424058949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 420091514fa91e446843d7fb5e255456, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PowerUpEffect: {fileID: 11400000, guid: 469a72c23031b0649823c308c21110ef, type: 2}
+--- !u!114 &4813587167503788879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7134872246424058949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee29b1518d8700c4baa6aa2c6c8a1389, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorNormal: {fileID: 2800000, guid: 3630a2e95a6bdd74aad8ba914870d733, type: 3}
+  cursorPointing: {fileID: 2800000, guid: 5867fb2599620ac4bb2e0e3d1b3c7f5b, type: 3}
+  cursorGrabbing: {fileID: 2800000, guid: 6648134af4fe5744785de892435a7a9f, type: 3}
