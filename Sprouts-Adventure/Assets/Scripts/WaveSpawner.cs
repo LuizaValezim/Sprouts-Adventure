@@ -47,6 +47,8 @@ public class WaveSpawner : MonoBehaviour
 
     void SpawnWave()
     {
+        Debug.Log("Wave " + currentWaveNumber);
+        
         if (canSpawn && nextSpawnTime < Time.time) 
         { 
             GameObject randomEnemy = currentWave.typeOfEnemies[Random.Range(0, currentWave.typeOfEnemies.Length)];
