@@ -9,20 +9,20 @@ public class CursorManager : MonoBehaviour
     [SerializeField] private Texture2D cursorGrabbing;
     
     void Start(){
-        Cursor.SetCursor(cursorNormal, new Vector2(10,10), CursorMode.Auto);
+        Cursor.SetCursor(cursorNormal, new Vector2(0,0), CursorMode.Auto);
         
     }
 
     public void Reset(){
-        Cursor.SetCursor(cursorNormal, new Vector2(10,10), CursorMode.Auto);
+        Cursor.SetCursor(cursorNormal, new Vector2(0,0), CursorMode.Auto);
     }
 
     public void SetCursorPointing(){
-         Cursor.SetCursor(cursorPointing, new Vector2(10,10), CursorMode.Auto);
+         Cursor.SetCursor(cursorPointing, new Vector2(0,0), CursorMode.Auto);
     }
 
     public void SetCursorGrabbing(){
-         Cursor.SetCursor(cursorGrabbing, new Vector2(10,10), CursorMode.Auto);
+         Cursor.SetCursor(cursorGrabbing, new Vector2(0,0), CursorMode.Auto);
 
     }
 

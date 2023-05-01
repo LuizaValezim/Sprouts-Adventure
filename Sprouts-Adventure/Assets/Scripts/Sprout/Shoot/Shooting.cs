@@ -7,14 +7,23 @@ public class Shooting : MonoBehaviour
     public Transform firePoint;
     public GameObject bulletPrefab;
     public int damage;
+    private bool shooting = true;
 
     public float bulletForce = 20f;
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape)){
+             shooting = false;
+             if (Input.GetKeyDown(KeyCode.Escape)){
+             shooting = true;
+            }
+        }
         if (Input.GetButtonDown("Fire1")) 
         {
-            Shoot();
+            if (shooting == true){
+                Shoot();
+            }
         }
     }
 
