@@ -35,7 +35,7 @@ namespace Pathfinding {
 		void Update () {
 			if (target != null && ai != null) ai.destination = target.position;
 			if (target == null) {
-				target = GameObject.FindGameObjectWithTag("Sprout").transform;
+				target = GameObject.FindGameObjectWithTag("Cow").transform;
 			}
 		}
 	}

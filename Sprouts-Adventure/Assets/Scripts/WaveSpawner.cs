@@ -19,12 +19,11 @@ public class WaveSpawner : MonoBehaviour
 {
     public Wave[] waves;
     public Transform[] spawnPoints;
-    public TextMeshProUGUI countText;
+    public TextMeshProUGUI waveNumber;
 
     private Wave currentWave;
     private int currentWaveNumber;
     private float nextSpawnTime;
-
     
     private bool canSpawn = true;
 
@@ -33,11 +32,17 @@ public class WaveSpawner : MonoBehaviour
         currentWave = waves[currentWaveNumber];
         SpawnWave();
         GameObject[] totalEnemies = GameObject.FindGameObjectsWithTag("Enemy");
-        countText.text = currentWave.numberOfEnemies + "/" + totalEnemies.Length;
         if (totalEnemies.Length == 0 && !canSpawn && currentWaveNumber+1 != waves.Length)
         {
             SpawnNextWave();
+            waveNumber.text = currentWaveNumber.ToString();
         }
+    }
+
+    void SpawnNextWave()
+    {
+        currentWaveNumber++;
+        canSpawn = true;
     }
 
     void SpawnWave()
@@ -54,11 +59,5 @@ public class WaveSpawner : MonoBehaviour
                 canSpawn = false;
             }
         }
-    }
-
-    void SpawnNextWave()
-    {
-        currentWaveNumber++;
-        canSpawn = true;
     }
 }
