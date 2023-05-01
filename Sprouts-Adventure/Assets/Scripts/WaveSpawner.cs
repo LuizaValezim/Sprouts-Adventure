@@ -19,6 +19,7 @@ public class WaveSpawner : MonoBehaviour
 {
     public Wave[] waves;
     public Transform[] spawnPoints;
+    public TextMeshProUGUI waveNumber;
 
     private Wave currentWave;
     private int currentWaveNumber;
@@ -34,7 +35,14 @@ public class WaveSpawner : MonoBehaviour
         if (totalEnemies.Length == 0 && !canSpawn && currentWaveNumber+1 != waves.Length)
         {
             SpawnNextWave();
+            waveNumber.text = currentWaveNumber.ToString();
         }
+    }
+
+    void SpawnNextWave()
+    {
+        currentWaveNumber++;
+        canSpawn = true;
     }
 
     void SpawnWave()
@@ -51,11 +59,5 @@ public class WaveSpawner : MonoBehaviour
                 canSpawn = false;
             }
         }
-    }
-
-    void SpawnNextWave()
-    {
-        currentWaveNumber++;
-        canSpawn = true;
     }
 }
