@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Cow : MonoBehaviour
 {
@@ -33,7 +34,7 @@ public class Cow : MonoBehaviour
 
         if (health <= 0)
         {
-            Destroy(gameObject);
+            SceneManager.LoadScene("GameOver");
         } 
     }
 

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerHearts : MonoBehaviour
 {
-    public PlayerHealth playerHealth;
+    public Player playerHealth;
     public int numberOfHearts;
 
     public Image[] hearts;

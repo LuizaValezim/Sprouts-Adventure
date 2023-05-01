@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour
     public int damage;
 
     private Transform playerTransform;
-    private PlayerHealth playerHealth;
+    private Player playerHealth;
     private float distance;
     public float howClose;
     public int coolDown;
@@ -23,7 +23,7 @@ public class Enemy : MonoBehaviour
         health = maxHealth;
 
         playerTransform = GameObject.FindGameObjectWithTag("Sprout").transform;
-        playerHealth = GameObject.FindGameObjectWithTag("Sprout").GetComponent<PlayerHealth>();
+        playerHealth = GameObject.FindGameObjectWithTag("Sprout").GetComponent<Player>();
     }
 
     void Update() 

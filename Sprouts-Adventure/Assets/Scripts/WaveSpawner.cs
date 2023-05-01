@@ -19,12 +19,10 @@ public class WaveSpawner : MonoBehaviour
 {
     public Wave[] waves;
     public Transform[] spawnPoints;
-    public TextMeshProUGUI countText;
 
     private Wave currentWave;
     private int currentWaveNumber;
     private float nextSpawnTime;
-
     
     private bool canSpawn = true;
 
@@ -33,7 +31,6 @@ public class WaveSpawner : MonoBehaviour
         currentWave = waves[currentWaveNumber];
         SpawnWave();
         GameObject[] totalEnemies = GameObject.FindGameObjectsWithTag("Enemy");
-        countText.text = currentWave.numberOfEnemies + "/" + totalEnemies.Length;
         if (totalEnemies.Length == 0 && !canSpawn && currentWaveNumber+1 != waves.Length)
         {
             SpawnNextWave();
