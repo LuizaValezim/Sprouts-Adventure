@@ -1,0 +1,964 @@
+fileFormatVersion: 2
+guid: a5d841b6681a3da47ba81610975027e5
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 15
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: baby brown cow animations sprites_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 258
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5903f091f44cc24490a28978b275856
+      internalID: -1998220081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby brown cow animations sprites_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 258
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1d422c8a91e31245892d4d4b0ab5383
+      internalID: 469564689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby brown cow animations sprites_2
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 226
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 534d1291e01aa6641aabe02587b98acd
+      internalID: 622731922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby brown cow animations sprites_3
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 226
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 450d1c9e751e61d4b8f7a2b2f4a426bd
+      internalID: 758603651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby brown cow animations sprites_4
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 226
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c38b37f2ec9b454ebe71fddbc1fc48f
+      internalID: -1501642732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby brown cow animations sprites_5
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 226
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83420c96eae3d4048ae2c3d2768b20e3
+      internalID: 1541452089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby brown cow animations sprites_6
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 194
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1e14fdd99a106140af2d5f0474c8afb
+      internalID: 1959406935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby brown cow animations sprites_7
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 194
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 786149a9ded049a4f9dd1239e22bdb29
+      internalID: 1210555523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby brown cow animations sprites_8
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 194
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5074b8fd10da1f04aaf97da3fdf22620
+      internalID: 228185277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby brown cow animations sprites_9
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 194
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0174092b2668cd4086b7da32f3664b7
+      internalID: -743988803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby brown cow animations sprites_10
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 162
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b01c41ca11cd2e48a53853e2a5a6554
+      internalID: 951887353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby brown cow animations sprites_11
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 162
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcfc5dcbfd13d8f4b9dfa94e3e893a67
+      internalID: -1045439870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby brown cow animations sprites_12
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 162
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f05075e8cc0ae9b49adb40d548c7ab05
+      internalID: 859844838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby brown cow animations sprites_13
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 130
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e23cf22fb083d7d409e9c457f132a39a
+      internalID: 295490826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby brown cow animations sprites_14
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 130
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfac21f3cd197684ab3ef4a5c9de441a
+      internalID: -972049531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby brown cow animations sprites_15
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 130
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5776f563002854941b2db9c357a6c123
+      internalID: 1485169257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby brown cow animations sprites_16
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 130
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1150c75560318db41a47dde1024362c1
+      internalID: -1774041210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby brown cow animations sprites_17
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 98
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbe18051b75b8c3498d41678b721b020
+      internalID: -209991594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby brown cow animations sprites_18
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 98
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c74f67e0712fb0e4ca712b7b031f62c5
+      internalID: 2083754151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby brown cow animations sprites_19
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 66
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be6271b8848fad34a9fce151829da3c2
+      internalID: -535258939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby brown cow animations sprites_20
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 66
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ad29ae11d78d8e41ac1c3218a8cca2d
+      internalID: -1746497393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby brown cow animations sprites_21
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 66
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed4e05917a08ba2448f246d0cb3fcab2
+      internalID: 890789481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby brown cow animations sprites_22
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 66
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c842f786ad79f4ea2796fce32b995d
+      internalID: 1415796500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby brown cow animations sprites_23
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 66
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e31a1e1d1cfa77545baa5b5cf2f8fa8c
+      internalID: 681234713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby brown cow animations sprites_24
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 66
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98c56e76a9a58ba429e0bcd3b0e8a4dd
+      internalID: -312228874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby brown cow animations sprites_25
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 66
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 329f0b29204217a48bc32a3dee70eb67
+      internalID: 1722883851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby brown cow animations sprites_26
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 66
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7d14753310dbba4383f2131932ac5f7
+      internalID: -705877698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby brown cow animations sprites_27
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 34
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0856f812fb2d54447a2a698ecb6ad3d1
+      internalID: 1563470264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby brown cow animations sprites_28
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 34
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09016c722c825c14682d97dc0c108d2c
+      internalID: -1803742916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby brown cow animations sprites_29
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 34
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a6fe6e4583ef984088c45c28d719a41
+      internalID: -143519327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby brown cow animations sprites_30
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 34
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e995ec8946167a24d9be519ef8a265e6
+      internalID: 407220788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby brown cow animations sprites_36
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 18
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8316c427ab78fb146b776691d163d045
+      internalID: -1459816511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby brown cow animations sprites_37
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 2
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfed6ac0bd4c1e14e89a2cbf63a61ee6
+      internalID: -1299451086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby brown cow animations sprites_38
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 2
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7706f797b09f3b49a384a9a77832987
+      internalID: 671153466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby brown cow animations sprites_39
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 2
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a8764143843954da393ba8c00a19b4
+      internalID: -142507835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby brown cow animations sprites_40
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 2
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5394aed0ba1bf8449b79f751eadd425d
+      internalID: 1860958529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby brown cow animations sprites_41
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 2
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d0abd41250a59247ad4d2cb864b712e
+      internalID: -357973079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baby brown cow animations sprites_42
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 2
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9357490b37256d44ba80396faabea6ec
+      internalID: 1639933467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      baby brown cow animations sprites_31: 1940931474
+      baby brown cow animations sprites_10: 951887353
+      baby brown cow animations sprites_24: -312228874
+      baby brown cow animations sprites_38: 671153466
+      baby brown cow animations sprites_41: -357973079
+      baby brown cow animations sprites_17: -209991594
+      baby brown cow animations sprites_28: -1803742916
+      baby brown cow animations sprites_0: -1998220081
+      baby brown cow animations sprites_33: 449460798
+      baby brown cow animations sprites_39: -142507835
+      baby brown cow animations sprites_16: -1774041210
+      baby brown cow animations sprites_25: 1722883851
+      baby brown cow animations sprites_1: 469564689
+      baby brown cow animations sprites_29: -143519327
+      baby brown cow animations sprites_12: 859844838
+      baby brown cow animations sprites_42: 1639933467
+      baby brown cow animations sprites_2: 622731922
+      baby brown cow animations sprites_6: 1959406935
+      baby brown cow animations sprites_11: -1045439870
+      baby brown cow animations sprites_30: 407220788
+      baby brown cow animations sprites_5: 1541452089
+      baby brown cow animations sprites_9: -743988803
+      baby brown cow animations sprites_36: -1459816511
+      baby brown cow animations sprites_27: 1563470264
+      baby brown cow animations sprites_19: -535258939
+      baby brown cow animations sprites_18: 2083754151
+      baby brown cow animations sprites_35: 2050000605
+      baby brown cow animations sprites_40: 1860958529
+      baby brown cow animations sprites_20: -1746497393
+      baby brown cow animations sprites_32: -352396137
+      baby brown cow animations sprites_3: 758603651
+      baby brown cow animations sprites_37: -1299451086
+      baby brown cow animations sprites_21: 890789481
+      baby brown cow animations sprites_4: -1501642732
+      baby brown cow animations sprites_26: -705877698
+      baby brown cow animations sprites_7: 1210555523
+      baby brown cow animations sprites_34: -1980447374
+      baby brown cow animations sprites_23: 681234713
+      baby brown cow animations sprites_22: 1415796500
+      baby brown cow animations sprites_15: 1485169257
+      baby brown cow animations sprites_14: -972049531
+      baby brown cow animations sprites_8: 228185277
+      baby brown cow animations sprites_13: 295490826
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
