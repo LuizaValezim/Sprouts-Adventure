@@ -10,7 +10,7 @@ public class MainMenu : MonoBehaviour
     }
 
     public void TryAgain() {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(1);
     }
 
     public void QuitGame() {
