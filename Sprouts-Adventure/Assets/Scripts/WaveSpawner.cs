@@ -22,6 +22,8 @@ public class WaveSpawner : MonoBehaviour
     public Transform[] spawnPointsEnemies;
     public Transform[] spawnPointsItems;
 
+    public Transform spawnPointBoss;
+
     private Wave currentWave;
     private int currentWaveNumber;
     private float nextSpawnTime;
@@ -48,22 +50,37 @@ public class WaveSpawner : MonoBehaviour
 
     void SpawnWave()
     {
-        Debug.Log("Wave " + currentWaveNumber);
-        
         if (canSpawn && nextSpawnTime < Time.time) 
         { 
+            // Chosing random enemies and items based on inputs per wave number
             GameObject randomEnemy = currentWave.typeOfEnemies[Random.Range(0, currentWave.typeOfEnemies.Length)];
             GameObject randomItem = currentWave.typeOfItems[Random.Range(0, currentWave.typeOfItems.Length)];
+
+            // Generating random spawn points based on inputs
             Transform randomPointEnemies = spawnPointsEnemies[Random.Range(0, spawnPointsEnemies.Length)];
             Transform randomPointItems = spawnPointsItems[Random.Range(0, spawnPointsItems.Length)];
-            Instantiate(randomEnemy, randomPointEnemies.position, Quaternion.identity);
+
+            // Instantiating the final boss (Lion)
+            if (currentWave.numberOfEnemies == 1) 
+            {
+                Instantiate(randomEnemy, spawnPointBoss.position, Quaternion.identity);
+            }
+            // Instantiating the random enemy
+            else 
+            {
+                Instantiate(randomEnemy, randomPointEnemies.position, Quaternion.identity);
+            }
+
             Instantiate(randomItem, randomPointItems.position, Quaternion.identity);
             currentWave.numberOfEnemies--;
             nextSpawnTime = Time.time + currentWave.spawnInterval;
+
             if(currentWave.numberOfEnemies == 0) 
             {
                 canSpawn = false;
             }
+
+            
         }
     }
 }
