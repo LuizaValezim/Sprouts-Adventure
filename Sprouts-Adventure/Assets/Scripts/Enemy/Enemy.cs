@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour
     public int damage;
 
     private Transform playerTransform;
-    public PlayerHealth playerHealth;
+    private PlayerHealth playerHealth;
     private float distance;
     public float howClose;
     public int coolDown;
