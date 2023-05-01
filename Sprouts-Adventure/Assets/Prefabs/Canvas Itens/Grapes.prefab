@@ -117,10 +117,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2463684096226528112}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 669d9bc3885976046a5e83c5cf6adf9c, type: 3}
+  m_Script: {fileID: 11500000, guid: c1357018dd18e234597db94542dfbe88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PowerUpEffect: {fileID: 11400000, guid: ed05c8cf605fba742ad70ab0533aabfb, type: 2}
+  item: {fileID: 2463684096226528112}
 --- !u!114 &9107991266922019348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,20 +230,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 153210847886041910}
-        m_TargetAssemblyTypeName: GrapesBuff, Assembly-CSharp
-        m_MethodName: Use
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 9107991266922019348}
-        m_TargetAssemblyTypeName: CursorManager, Assembly-CSharp
-        m_MethodName: SetCursorGrabbing
+        m_TargetAssemblyTypeName: PowerUp, Assembly-CSharp
+        m_MethodName: UsePowerUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

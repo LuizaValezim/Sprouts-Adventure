@@ -93,8 +93,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1883417727113213117}
-        m_TargetAssemblyTypeName: MilkBuff, Assembly-CSharp
-        m_MethodName: Use
+        m_TargetAssemblyTypeName: PowerUp, Assembly-CSharp
+        m_MethodName: UsePowerUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -308,10 +308,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 6517664685372607411}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38089644137a148479306963a98e372c, type: 3}
+  m_Script: {fileID: 11500000, guid: c1357018dd18e234597db94542dfbe88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PowerUpEffect: {fileID: 11400000, guid: 133e18b32b0cbeb498c1482440d5e6ec, type: 2}
+  item: {fileID: 6517664685372607411}
 --- !u!114 &971236650329723636
 MonoBehaviour:
   m_ObjectHideFlags: 0

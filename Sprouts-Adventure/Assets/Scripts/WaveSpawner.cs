@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 // Reference video: https://www.youtube.com/watch?v=pKN8jVnSKyM&ab_channel=ChronoABI
 
@@ -18,11 +19,13 @@ public class WaveSpawner : MonoBehaviour
 {
     public Wave[] waves;
     public Transform[] spawnPoints;
+    public TextMeshProUGUI countText;
 
     private Wave currentWave;
     private int currentWaveNumber;
     private float nextSpawnTime;
 
+    
     private bool canSpawn = true;
 
     private void Update()
@@ -30,10 +33,10 @@ public class WaveSpawner : MonoBehaviour
         currentWave = waves[currentWaveNumber];
         SpawnWave();
         GameObject[] totalEnemies = GameObject.FindGameObjectsWithTag("Enemy");
-        if (totalEnemies.Length == 0 && !canSpawn)
+        countText.text = currentWave.numberOfEnemies + "/" + totalEnemies.Length;
+        if (totalEnemies.Length == 0 && !canSpawn && currentWaveNumber+1 != waves.Length)
         {
-            currentWaveNumber++;
-            canSpawn = true;
+            SpawnNextWave();
         }
     }
 
@@ -51,5 +54,11 @@ public class WaveSpawner : MonoBehaviour
                 canSpawn = false;
             }
         }
+    }
+
+    void SpawnNextWave()
+    {
+        currentWaveNumber++;
+        canSpawn = true;
     }
 }
