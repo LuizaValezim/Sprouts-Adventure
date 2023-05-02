@@ -32,37 +32,37 @@ public class ItemDescription : MonoBehaviour
 
     public void SetMilk(){
         this.title.text = "Milk (PowerUp)";
-        this.description.text = "The PowerUp of the Milk ";
+        this.description.text = "The PowerUp of the Milk: Gives you super speed";
 
     }
 
     public void SetGrass(){
         this.title.text = "Grass (PowerUp)";
-        this.description.text = "Super Enchada";
+        this.description.text = "The PowerUp of the Grass: Gives you little speed";
 
     }
 
     public void SetApple(){
         this.title.text = "Apple (PowerUp)";
-        this.description.text = "Super Maçã";
+        this.description.text = "The PowerUp of the Apple: Gives you one more heart";
 
     }
 
     public void SetStrawberry(){
         this.title.text = "Strawberry (PowerUp)";
-        this.description.text = "Super Morangos";
+        this.description.text = "The PowerUp of the Strawberry: Gives you super damage";
 
     }
 
     public void SetGrape(){
-        this.title.text = "Grapes (PoweUp)";
-        this.description.text = "Super Uvas";
+        this.title.text = "Grapes (PowerUp)";
+        this.description.text = "The PowerUp of the Grapes: Gives you a little damage";
 
     }
 
     public void SetBlueberry(){
         this.title.text = "Blueberry (PowerUp)";
-        this.description.text = "Super Blueberries";
+        this.description.text = "The PowerUp of the Blueberry: Gives you two more hearts";
 
     }
 
