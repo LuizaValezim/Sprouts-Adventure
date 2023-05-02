@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 61eb193246c940743b9fa22c0bdd3f55
   - enabled: 1
+    path: Assets/Scenes/Story.unity
+    guid: f3a3a7e102b96504986c8020014d2ab4
+  - enabled: 1
     path: Assets/Scenes/Gameplay.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -17,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOver_Sprout.unity
     guid: 7e3a2f0519857be4fa0b24b7919921fb
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: 1abfd2627321d6b4e9c17f19bd016281
   m_configObjects: {}

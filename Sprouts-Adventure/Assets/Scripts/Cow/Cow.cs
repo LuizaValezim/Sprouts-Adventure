@@ -30,7 +30,6 @@ public class Cow : MonoBehaviour
 
     void Update() 
     {
-        Debug.Log(health);
 
         destinationDistance = Vector3.Distance(destinationTransform.position, transform.position);
 
@@ -39,6 +38,7 @@ public class Cow : MonoBehaviour
             SceneManager.LoadScene("Win");
         }
 
+        Debug.Log(destinationDistance);
         healthText.text = health.ToString();
     }
 
@@ -48,8 +48,6 @@ public class Cow : MonoBehaviour
 
         source = GameObject.FindGameObjectWithTag("Cow").GetComponent<AudioSource>();
         source.PlayOneShot(hurtClip);
-
-        Debug.Log("Cow's Life: " + health.ToString());
 
         if (health <= 0)
         {
