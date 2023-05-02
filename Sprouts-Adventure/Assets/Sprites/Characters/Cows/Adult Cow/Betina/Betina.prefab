@@ -391,9 +391,11 @@ MonoBehaviour:
   health: 0
   maxHealth: 15
   destinationTransform: {fileID: 0}
-  howClose: 0.2
+  howClose: 0.3
   coolDown: 2
   animator: {fileID: 7951279399891468057}
+  hurtClip: {fileID: 8300000, guid: a14de4d3b3bdce3479463c24140f6f5a, type: 3}
+  healthText: {fileID: 0}
 --- !u!114 &7951279401081207313
 MonoBehaviour:
   m_ObjectHideFlags: 0

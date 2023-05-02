@@ -210,7 +210,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1977338296}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: StartGame
+        m_MethodName: FirstStoryScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -887,7 +887,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e081322bb8434348aba37a9e5ee5566, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startGameClip: {fileID: 8300000, guid: a3b9c7fc2d8b3d7439ff5b73d08e6534, type: 3}
 --- !u!1 &1981608763
 GameObject:
   m_ObjectHideFlags: 0
