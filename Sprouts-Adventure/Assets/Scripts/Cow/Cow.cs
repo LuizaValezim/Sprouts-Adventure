@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class Cow : MonoBehaviour
 {
@@ -20,6 +21,8 @@ public class Cow : MonoBehaviour
     private AudioSource source;
     public AudioClip hurtClip;
 
+    public TextMeshProUGUI healthText;
+
     public void Start()
     {
         health = maxHealth;
@@ -31,13 +34,12 @@ public class Cow : MonoBehaviour
 
         destinationDistance = Vector3.Distance(destinationTransform.position, transform.position);
 
-        Debug.Log("Distance: " + destinationDistance.ToString());
-
         if (destinationDistance <= howClose) 
         {
             SceneManager.LoadScene("Win");
         }
 
+        healthText.text = health.ToString();
     }
 
     public void Damage(int damage)
