@@ -9,10 +9,6 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Gameplay");
     }
 
-    public void TryAgain() {
-        SceneManager.LoadScene("Gameplay");
-    }
-
     public void QuitGame() {
         Application.Quit();
     }

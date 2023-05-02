@@ -23,6 +23,11 @@ public class Enemy : MonoBehaviour
 
     public Animator animator;
 
+    public AudioSource source;
+    public AudioClip attackClip;
+    public AudioClip hurtClip;
+    public AudioClip deathClip;
+
     public void Start()
     {
         health = maxHealth;
@@ -36,8 +41,8 @@ public class Enemy : MonoBehaviour
 
     void Update() 
     {
-        playerDistance = Vector3.Distance(playerTransform.position, playerTransform.position);
-        cowDistance = Vector3.Distance(cowTransform.position, cowTransform.position);
+        playerDistance = Vector3.Distance(playerTransform.position, transform.position);
+        cowDistance = Vector3.Distance(cowTransform.position, transform.position);
 
         // Run animation of the enemy attacking
         animator.SetFloat("Distance Player", playerDistance);
@@ -61,6 +66,8 @@ public class Enemy : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)  
     {
+        source.PlayOneShot(attackClip);
+
         // Player to take damage
         if (collision.gameObject.tag == "Sprout")
         {
@@ -77,6 +84,7 @@ public class Enemy : MonoBehaviour
     public void Damage(int damage)
     {
         health -= damage;
+        source.PlayOneShot(hurtClip);
 
         if (health <= 0)
         {

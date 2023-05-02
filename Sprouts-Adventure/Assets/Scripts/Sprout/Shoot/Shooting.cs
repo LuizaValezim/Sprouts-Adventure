@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Shooting : MonoBehaviour
 {
@@ -10,9 +11,10 @@ public class Shooting : MonoBehaviour
     private bool shooting = true;
     public float bulletForce = 20f;
 
-    public AudioSource source;
+    private AudioSource source;
     public AudioClip clip;
 
+    public TextMeshProUGUI damageText;
 
     void Update()
     {
@@ -26,9 +28,12 @@ public class Shooting : MonoBehaviour
         {
             if (shooting == true){
                 Shoot();
+                source = GameObject.FindGameObjectWithTag("Sprout").GetComponent<AudioSource>();
                 source.PlayOneShot(clip);
             }
         }
+
+        damageText.text = damage.ToString();
     }
 
     void Shoot() 

@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class Player : MonoBehaviour
 {
     [SerializeField] public int health;
     public int maxHealth;
+    
+    private AudioSource source;
+    public AudioClip startGameClip;
 
     [SerializeField] private GameObject emotes;
     [SerializeField] private GameObject inventory;

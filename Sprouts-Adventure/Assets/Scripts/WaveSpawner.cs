@@ -61,15 +61,8 @@ public class WaveSpawner : MonoBehaviour
             Transform randomPointItems = spawnPointsItems[Random.Range(0, spawnPointsItems.Length)];
 
             // Instantiating the final boss (Lion)
-            if (currentWave.numberOfEnemies == 1) 
-            {
-                Instantiate(randomEnemy, spawnPointBoss.position, Quaternion.identity);
-            }
-            // Instantiating the random enemy
-            else 
-            {
-                Instantiate(randomEnemy, randomPointEnemies.position, Quaternion.identity);
-            }
+            //Instantiate(randomEnemy, spawnPointBoss.position, Quaternion.identity);
+            Instantiate(randomEnemy, randomPointEnemies.position, Quaternion.identity);
 
             Instantiate(randomItem, randomPointItems.position, Quaternion.identity);
             currentWave.numberOfEnemies--;
@@ -79,8 +72,6 @@ public class WaveSpawner : MonoBehaviour
             {
                 canSpawn = false;
             }
-
-            
         }
     }
 }

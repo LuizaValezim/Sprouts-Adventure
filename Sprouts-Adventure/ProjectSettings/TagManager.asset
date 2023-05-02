@@ -9,6 +9,7 @@ TagManager:
   - Item
   - Cow
   - Baby
+  - Destination
   layers:
   - Default
   - TransparentFX

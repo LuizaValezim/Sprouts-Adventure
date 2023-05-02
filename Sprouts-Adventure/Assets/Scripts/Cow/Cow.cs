@@ -10,27 +10,44 @@ public class Cow : MonoBehaviour
     public int health;
     public int maxHealth;
 
-    private Transform playerTransform;
-    private float distance;
+    public Transform destinationTransform;
+    private float destinationDistance;
     public float howClose;
     public int coolDown;
 
     public Animator animator;
 
+    private AudioSource source;
+    public AudioClip hurtClip;
+
     public void Start()
     {
         health = maxHealth;
-
-        playerTransform = GameObject.FindGameObjectWithTag("Sprout").transform;
     }
 
     void Update() 
     {
+        Debug.Log(health);
+
+        destinationDistance = Vector3.Distance(destinationTransform.position, transform.position);
+
+        Debug.Log("Distance: " + destinationDistance.ToString());
+
+        if (destinationDistance <= howClose) 
+        {
+            SceneManager.LoadScene("Win");
+        }
+
     }
 
     public void Damage(int damage)
     {
         health -= damage;
+
+        source = GameObject.FindGameObjectWithTag("Cow").GetComponent<AudioSource>();
+        source.PlayOneShot(hurtClip);
+
+        Debug.Log("Cow's Life: " + health.ToString());
 
         if (health <= 0)
         {

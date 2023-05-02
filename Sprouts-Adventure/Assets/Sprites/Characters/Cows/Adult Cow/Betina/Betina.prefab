@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7166547732649667837}
   - component: {fileID: 2877928286360410934}
+  - component: {fileID: 7951279401081207310}
   m_Layer: 0
   m_Name: HealthBar
   m_TagString: Untagged
@@ -25,8 +26,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 444172188323192553}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.056, y: 0.874, z: 0}
+  m_LocalScale: {x: 1.3147, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7951279399891468063}
@@ -72,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 560526635, guid: 533b7ef47ea321148a4a31f0cd710b89, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -84,6 +85,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7951279401081207310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444172188323192553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2131093ad558c04d9b93c9e4a3c133d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cow: {fileID: 5571448726016357942}
+  sp1: {fileID: 49616780, guid: 533b7ef47ea321148a4a31f0cd710b89, type: 3}
+  sp2: {fileID: 1512393074, guid: 533b7ef47ea321148a4a31f0cd710b89, type: 3}
+  sp3: {fileID: -586508299, guid: 533b7ef47ea321148a4a31f0cd710b89, type: 3}
+  sp4: {fileID: 2103803393, guid: 533b7ef47ea321148a4a31f0cd710b89, type: 3}
+  sp5: {fileID: 265947849, guid: 533b7ef47ea321148a4a31f0cd710b89, type: 3}
+  sp6: {fileID: 560526635, guid: 533b7ef47ea321148a4a31f0cd710b89, type: 3}
+  img: {fileID: 0}
 --- !u!1 &7951279399891468059
 GameObject:
   m_ObjectHideFlags: 0
@@ -100,9 +121,12 @@ GameObject:
   - component: {fileID: 7951279399891468061}
   - component: {fileID: 173091460947834146}
   - component: {fileID: 5571448726016357942}
+  - component: {fileID: 7951279401081207313}
+  - component: {fileID: 7951279401081207314}
+  - component: {fileID: 7951279401081207315}
   m_Layer: 0
   m_Name: Betina
-  m_TagString: Untagged
+  m_TagString: Cow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -163,7 +187,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 6
   m_Sprite: {fileID: 291758481, guid: 37ef2f2f92ea9b74bbfb3be6299577f5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -185,7 +209,7 @@ Animator:
   m_GameObject: {fileID: 7951279399891468059}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 59e0c7bf20952c04aa2caea5c791e2ef, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -215,7 +239,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 0.14330924
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -303,7 +327,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 2
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -350,7 +374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be36f9b6607197b4d839fe38e5940186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.05
+  moveSpeed: 0.2
   animator: {fileID: 7951279399891468057}
 --- !u!114 &5571448726016357942
 MonoBehaviour:
@@ -364,8 +388,93 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bc0bef4b0e023648be52a648a833027, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 30
-  maxHealth: 30
-  howClose: 0.1
+  health: 0
+  maxHealth: 15
+  destinationTransform: {fileID: 0}
+  howClose: 0.2
   coolDown: 2
   animator: {fileID: 7951279399891468057}
+--- !u!114 &7951279401081207313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7951279399891468059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6eb1402c17e84a9282a7f0f62eb584f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5
+  radius: 1.15
+  height: 1
+  canMove: 1
+  maxSpeed: 0.2
+  gravity: {x: 0, y: 0, z: 0}
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  centerOffsetCompatibility: NaN
+  repathRateCompatibility: NaN
+  canSearchCompability: 0
+  orientation: 1
+  enableRotation: 0
+  autoRepath:
+    mode: 2
+    interval: 0.5
+    sensitivity: 10
+    maximumInterval: 1
+    visualizeSensitivity: 0
+  targetCompatibility: {fileID: 0}
+  maxAcceleration: -2.5
+  rotationSpeed: 360
+  slowdownDistance: 0.1
+  pickNextWaypointDist: 0.1
+  endReachedDistance: 0.1
+  alwaysDrawGizmos: 0
+  slowWhenNotFacingTarget: 1
+  whenCloseToDestination: 0
+  constrainInsideGraph: 0
+--- !u!114 &7951279401081207314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7951279399891468059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  drawGizmos: 1
+  detailedGizmos: 0
+  startEndModifier:
+    addPoints: 0
+    exactStartPoint: 3
+    exactEndPoint: 3
+    useRaycasting: 0
+    mask:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    useGraphRaycasting: 0
+  traversableTags: -1
+  tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  graphMask:
+    value: -1
+--- !u!114 &7951279401081207315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7951279399891468059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9679e68a0f1144e79c664d9a11ca121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  target: {fileID: 0}
