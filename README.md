@@ -1,5 +1,5 @@
 # Sprout's Mystery Adventure
-![zhR86z](https://github.com/LuizaValezim/Sprouts-Adventure/assets/62949391/c57eaa9c-d079-4a8d-99e9-0f9009ace305 =300x300)
+![zhR86z](https://github.com/LuizaValezim/Sprouts-Adventure/assets/62949391/c57eaa9c-d079-4a8d-99e9-0f9009ace305 | width=100)
 
 ### Story
 Run! You live in a little farm that your family gave to you and your friend Betina needs your help. Her daughter was captured by this mysterous invasors... Help her!
